@@ -27,7 +27,7 @@ app.use(express.static(path.join(path.resolve(), "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-//setting up view engine
+//setting up view Engine
 app.set("view engine", "ejs");
 
 const isAuthenticated = async (req, res, next) => {
